@@ -1,0 +1,12 @@
+C:\Users\kthanga1\source\repos\CustomerPortal\BusinessObjectLayer\bin\Debug\net7.0\BusinessObjectLayer.deps.json
+C:\Users\kthanga1\source\repos\CustomerPortal\BusinessObjectLayer\bin\Debug\net7.0\BusinessObjectLayer.dll
+C:\Users\kthanga1\source\repos\CustomerPortal\BusinessObjectLayer\bin\Debug\net7.0\BusinessObjectLayer.pdb
+C:\Users\kthanga1\source\repos\CustomerPortal\BusinessObjectLayer\obj\Debug\net7.0\BusinessObjectLayer.csproj.AssemblyReference.cache
+C:\Users\kthanga1\source\repos\CustomerPortal\BusinessObjectLayer\obj\Debug\net7.0\BusinessObjectLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kthanga1\source\repos\CustomerPortal\BusinessObjectLayer\obj\Debug\net7.0\BusinessObjectLayer.AssemblyInfoInputs.cache
+C:\Users\kthanga1\source\repos\CustomerPortal\BusinessObjectLayer\obj\Debug\net7.0\BusinessObjectLayer.AssemblyInfo.cs
+C:\Users\kthanga1\source\repos\CustomerPortal\BusinessObjectLayer\obj\Debug\net7.0\BusinessObjectLayer.csproj.CoreCompileInputs.cache
+C:\Users\kthanga1\source\repos\CustomerPortal\BusinessObjectLayer\obj\Debug\net7.0\BusinessObjectLayer.dll
+C:\Users\kthanga1\source\repos\CustomerPortal\BusinessObjectLayer\obj\Debug\net7.0\refint\BusinessObjectLayer.dll
+C:\Users\kthanga1\source\repos\CustomerPortal\BusinessObjectLayer\obj\Debug\net7.0\BusinessObjectLayer.pdb
+C:\Users\kthanga1\source\repos\CustomerPortal\BusinessObjectLayer\obj\Debug\net7.0\ref\BusinessObjectLayer.dll

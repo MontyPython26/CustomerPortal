@@ -1,0 +1,76 @@
+﻿@*@page "{id}"
+@model BusinessObjectLayer.NewFolder.CustomerList
+*@
+<div class="row">
+    <div class="col-lg-8">
+        <form asp-controller="Customer" asp-action="CreateCustomerPost">
+
+
+            <div class="mb-3">
+                <label for="First Name" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="FirstName" name="FirstName" placeholder="Enter your First Name" required>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="Last Name" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="LastName" name="LastName" placeholder="Enter your Last Name" required>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="Email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="Email" name="Email" placeholder="Enter your Email Address" required>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+   
+    // Function to load customer data by ID and populate input fields
+    function loadCustomerDataById(customerId) {
+        $.ajax({
+            url: `/api/Customer/${customerId}`, // Use the ID from the URL in the AJAX request
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                // Populate input fields with the retrieved data
+                $("#FirstName").val(data.firstName);
+                $("#LastName").val(data.lastName);
+                $("#Email").val(data.eMail);
+            },
+            error: function (error) {
+                console.error("Error:", error);
+            }
+        });
+    }
+
+    // Function to extract the ID from the URL
+    function getCustomerIdFromUrl() {
+        // Get the current URL
+        debugger;
+        var currentUrl = window.location.href;
+
+        // Use regular expressions to match and extract the ID
+        var match = currentUrl.match(/\/Customer\/EditCustomer\/(\d+)/);
+
+        if (match && match.length >= 2) {
+            return match[1]; // The extracted ID
+        }
+
+        return null; // If no ID is found in the URL
+    }
+
+    $(document).ready(function () {
+        // Call the loadCustomerDataById function with the customer ID from the URL
+        loadCustomerDataById(getCustomerIdFromUrl());
+    });
+</script>
+
